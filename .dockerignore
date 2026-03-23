@@ -12,6 +12,6 @@ meili_data*
 librechat*
 Dockerfile*
 docs
-
+!librechat.yaml
 # Ignore all hidden files
 .*

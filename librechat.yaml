@@ -231,20 +231,19 @@ endpoints:
       baseURL: 'https://api.gptsapi.net/v1'
       models:
         default:
-          - "gpt-5-chat-latest"
+          - "gpt-5.4-pro"
+          - "gpt-5.4"
           - "gpt-5.2"
-          - "gpt-5.1-codex"
+          - "gpt-5.2-codex"
           - "gpt-5-mini"
-          - "gpt-4.1"
-          - "gpt-4o-mini"
           - "o1-mini"
-          - "claude-opus-4-5-20251101"
-          - "claude-sonnet-4-5-20250929"
-          - "claude-sonnet-4-5-20250929-thinking"
-          - "gemini-2.5-pro"
+          - "claude-sonnet-4-6"
+          - "claude-opus-4-6"
+          - "claude-sonnet-4-6-thinking"
+          - "gemini-3.1-pro-preview"
         fetch: false
       titleConvo: true
-      titleModel: 'gpt-4o-mini'
+      titleModel: 'gpt-5-mini'
       modelDisplayLabel: 'GPTsAPI'
 
     - name: "Perplexity"
@@ -281,7 +280,7 @@ modelSpecs:
       description: "日常对话、写作、总结、研究助理"
       preset:
         endpoint: "GPTsAPI"
-        model: "gpt-5-chat-latest"
+        model: "gpt-5.4"
         temperature: 0.7
 
     - name: "long-text"
@@ -297,7 +296,7 @@ modelSpecs:
       description: "复杂但常规的逻辑与长上下文代码（分析 + 实现）"
       preset:
         endpoint: "GPTsAPI"
-        model: "claude-sonnet-4-5-20250929"
+        model: "claude-sonnet-4-6"
         temperature: 0.2
 
     - name: "coding-claude-opus"
@@ -305,7 +304,7 @@ modelSpecs:
       description: "高难度、需深度推理或整体设计的代码与系统"
       preset:
         endpoint: "GPTsAPI"
-        model: "claude-opus-4-5-20251101"
+        model: "claude-opus-4-6"
         temperature: 0.2
 
     - name: "coding-codex"
@@ -313,7 +312,7 @@ modelSpecs:
       description: "直接产出可运行代码（函数 / API / 重构 / 补全）"
       preset:
         endpoint: "GPTsAPI"
-        model: "gpt-5.1-codex"
+        model: "gpt-5.2-codex"
         temperature: 0.2
 
 
